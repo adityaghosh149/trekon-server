@@ -27,46 +27,58 @@ const getEndDate = (startDate, durationDays) => {
 	return endDate.toISOString().split("T")[0];
 };
 
-export const getFeaturedTreks = async (req, res) => {
+const transformPackageData = ({
+	id,
+	title,
+	locationId,
+	duration,
+	groupSizeMin,
+	groupSizeMax,
+	difficulty,
+	price,
+	coverImage,
+	bookingDeadline,
+	sherpa,
+	isSponsored,
+}) => {
+	const startDate = getStartDate(bookingDeadline);
+	const endDate = getEndDate(startDate, duration);
+
+	return {
+		id: id.toString(),
+		title,
+		location: getLocationName(locationId),
+		duration,
+		groupSizeMin,
+		groupSizeMax,
+		difficulty,
+		startDate,
+		endDate,
+		price,
+		image: coverImage,
+		sherpa: getSherpa(sherpa),
+		isSponsored,
+	};
+};
+
+const getAllTreks = (req, res) => {
+	try {
+		const data = packages.map(transformPackageData);
+		res.status(200).json(data);
+	} catch (error) {
+		console.error(error);
+		res.status(500).json({
+			message: "Failed to fetch all treks",
+			error: error.message,
+		});
+	}
+};
+
+const getFeaturedTreks = (req, res) => {
 	try {
 		const data = packages
 			.filter((trek) => trek.isSponsored)
-			.map(
-				({
-					id,
-					title,
-					locationId,
-					duration,
-					groupSizeMin,
-					groupSizeMax,
-					difficulty,
-					price,
-					coverImage,
-					bookingDeadline,
-					sherpa,
-					isSponsored,
-				}) => {
-					const startDate = getStartDate(bookingDeadline);
-					const endDate = getEndDate(startDate, duration);
-
-					return {
-						id,
-						title,
-						location: getLocationName(locationId),
-						duration,
-						groupSizeMin,
-						groupSizeMax,
-						difficulty,
-						startDate,
-						endDate,
-						price,
-						image: coverImage,
-						sherpa: getSherpa(sherpa),
-						isSponsored,
-					};
-				}
-			);
-
+			.map(transformPackageData);
 		res.status(200).json(data);
 	} catch (error) {
 		console.error(error);
@@ -76,3 +88,5 @@ export const getFeaturedTreks = async (req, res) => {
 		});
 	}
 };
+
+export { getAllTreks, getFeaturedTreks };

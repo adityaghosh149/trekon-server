@@ -2,10 +2,10 @@ import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
 
-import featuredTreksRoutes from "./routes/featuredTrekRoutes.js";
 import locationRoutes from "./routes/locationsRoutes.js";
+import serachTrekRoutes from "./routes/searchTreksRoutes.js";
 import trekDetailsRoutes from "./routes/trekDetailsRoutes.js";
-import serachTrekRoutes from "./routes/searchTreksRoutes.js"
+import trekRoutes from "./routes/trekRoutes.js";
 
 // Initialize the express app
 const app = express();
@@ -19,9 +19,9 @@ app.use(cors());
 
 // Routes
 app.use("/api/locations", locationRoutes);
-app.use("/api/featured-treks", featuredTreksRoutes);
+app.use("/api/treks", trekRoutes);
 app.use("/api/trek-details", trekDetailsRoutes);
-app.use("/api/search-treks", serachTrekRoutes)
+app.use("/api/search-treks", serachTrekRoutes);
 
 // Connect to the database and start the server
 try {

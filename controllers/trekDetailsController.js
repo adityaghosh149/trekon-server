@@ -7,12 +7,14 @@ const getTrekDetails = (req, res) => {
 			.filter((trek) => trek.id === id)
 			.map(
 				({
+					id,
 					title,
 					duration,
-					description,
+					description, 
 					groupSizeMin,
 					groupSizeMax,
 					difficulty,
+					availableSlots,
 					startingPoint,
 					price,
 					trekDays,
@@ -21,9 +23,11 @@ const getTrekDetails = (req, res) => {
 					sherpa,
 				}) => {
 					return {
+						id: id.toString(),
 						title,
 						description,
 						duration,
+						availableSlots,
 						groupSize: groupSizeMin + "-" + groupSizeMax,
 						difficulty,
 						startingPoint,
