@@ -152,7 +152,7 @@
 
 #### 5. Search Treks
 
-##### Endpoint: `GET /api/search-treks/`
+##### Endpoint: `GET /api/search-treks`
 
 **Description:** Searches for treks based on filters or search criteria.
 
