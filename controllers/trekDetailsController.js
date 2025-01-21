@@ -1,4 +1,5 @@
 import packages from "../data/packages.js";
+import changeDateFormat from "../utils/date.js";
 
 const getTrekDetails = (req, res) => {
 	try {
@@ -35,7 +36,7 @@ const getTrekDetails = (req, res) => {
 			groupSize: groupSizeMin + "-" + groupSizeMax,
 			difficulty,
 			startingPoint,
-			bookingDeadline,
+			bookingDeadline: changeDateFormat(bookingDeadline),
 			price,
 			coverImage,
 			trekDays,

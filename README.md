@@ -1,8 +1,8 @@
-# API Documentation
+### API Documentation
 
-## 1. Get Locations
+#### 1. Get Locations
 
-### Endpoint: `GET /locations/`
+##### Endpoint: `GET /locations/`
 
 **Description:** Fetches a list of available trek locations.
 
@@ -20,9 +20,9 @@
 
 ---
 
-## 2. Get Treks
+#### 2. Get Treks
 
-### Endpoint: `GET /api/treks`
+##### Endpoint: `GET /api/treks`
 
 **Description:** Retrieves a list of all treks available on the platform.
 
@@ -55,9 +55,9 @@
 
 ---
 
-## 3. Get Featured Treks
+#### 3. Get Featured Treks
 
-### Endpoint: `GET /api/treks/featured-treks`
+##### Endpoint: `GET /api/treks/featured-treks`
 
 **Description:** Fetches a list of featured treks on the platform.
 
@@ -90,9 +90,9 @@
 
 ---
 
-## 4. Get Trek Details
+#### 4. Get Trek Details
 
-### Endpoint: `GET /api/trek-details/:id`
+##### Endpoint: `GET /api/trek-details/:id`
 
 **Description:** Retrieves detailed information about a specific trek by its ID.
 
@@ -150,9 +150,9 @@
 
 ---
 
-## 5. Search Treks
+#### 5. Search Treks
 
-### Endpoint: `GET /api/search-treks/`
+##### Endpoint: `GET /api/search-treks/`
 
 **Description:** Searches for treks based on filters or search criteria.
 

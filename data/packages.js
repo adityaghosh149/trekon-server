@@ -12,7 +12,7 @@ const packages = [
 		startingPoint: "Manali, Himachal Pradesh",
 		isSponsored: true,
 		price: "8000",
-		availableSlots: "10",
+		availableSlots: "5",
 		bookingDeadline: "2025-03-10",
 		coverImage: "https://example.com/hampta-pass.jpg",
 		trekDays: [
@@ -61,7 +61,7 @@ const packages = [
 		startingPoint: "Haridwar, Uttarakhand",
 		isSponsored: false,
 		price: "7000",
-		availableSlots: "8",
+		availableSlots: "5",
 		bookingDeadline: "2025-05-01",
 		coverImage: "https://example.com/valley-of-flowers.jpg",
 		trekDays: [
@@ -110,7 +110,7 @@ const packages = [
 		startingPoint: "Aru Valley, Kashmir",
 		isSponsored: false,
 		price: "10000",
-		availableSlots: "7",
+		availableSlots: "5",
 		bookingDeadline: "2025-06-15",
 		coverImage: "https://example.com/tarsar-marsar.jpg",
 		trekDays: [
@@ -208,7 +208,7 @@ const packages = [
 		startingPoint: "Sankri, Uttarakhand",
 		isSponsored: false,
 		price: "6000",
-		availableSlots: "15",
+		availableSlots: "5",
 		bookingDeadline: "2025-11-20",
 		coverImage: "https://example.com/kedarkantha.jpg",
 		trekDays: [
@@ -257,7 +257,7 @@ const packages = [
 		startingPoint: "Manebhanjan, West Bengal",
 		isSponsored: false,
 		price: "11000",
-		availableSlots: "8",
+		availableSlots: "5",
 		bookingDeadline: "2025-04-15",
 		coverImage: "https://example.com/sandakphu.jpg",
 		trekDays: [
@@ -306,7 +306,7 @@ const packages = [
 		startingPoint: "Janki Chatti, Uttarakhand",
 		isSponsored: false,
 		price: "13000",
-		availableSlots: "6",
+		availableSlots: "5",
 		bookingDeadline: "2025-07-20",
 		coverImage: "https://example.com/bali-pass.jpg",
 		trekDays: [
@@ -355,7 +355,7 @@ const packages = [
 		startingPoint: "Debat, Uttarakhand",
 		isSponsored: false,
 		price: "9500",
-		availableSlots: "10",
+		availableSlots: "5",
 		bookingDeadline: "2025-06-05",
 		coverImage: "https://example.com/roopkund.jpg",
 		trekDays: [
@@ -404,7 +404,7 @@ const packages = [
 		startingPoint: "Rishikesh, Uttarakhand",
 		isSponsored: true,
 		price: "5000",
-		availableSlots: "12",
+		availableSlots: "5",
 		bookingDeadline: "2025-08-10",
 		coverImage: "https://example.com/tungnath-chandrashila.jpg",
 		trekDays: [
@@ -496,7 +496,7 @@ const packages = [
 		startingPoint: "Jobri, Himachal Pradesh",
 		isSponsored: false,
 		price: "10000",
-		availableSlots: "10",
+		availableSlots: "5",
 		bookingDeadline: "2025-05-25",
 		coverImage: "https://example.com/hampta-classic.jpg",
 		trekDays: [
@@ -545,7 +545,7 @@ const packages = [
 		startingPoint: "Jobri, Himachal Pradesh",
 		isSponsored: false,
 		price: "12000",
-		availableSlots: "8",
+		availableSlots: "5",
 		bookingDeadline: "2025-06-10",
 		coverImage: "https://example.com/hampta-monsoon.jpg",
 		trekDays: [
@@ -594,7 +594,7 @@ const packages = [
 		startingPoint: "Jobri, Himachal Pradesh",
 		isSponsored: false,
 		price: "15000",
-		availableSlots: "6",
+		availableSlots: "5",
 		bookingDeadline: "2025-11-30",
 		coverImage: "https://example.com/hampta-winter.jpg",
 		trekDays: [
@@ -698,7 +698,7 @@ const packages = [
 		startingPoint: "Manali, Himachal Pradesh",
 		isSponsored: false,
 		price: "9500",
-		availableSlots: "12",
+		availableSlots: "5",
 		bookingDeadline: "2025-08-01",
 		coverImage: "https://example.com/hampta-adventure.jpg",
 		trekDays: [
@@ -750,7 +750,7 @@ const packages = [
 		startingPoint: "Govindghat, Uttarakhand",
 		isSponsored: true,
 		price: "8000",
-		availableSlots: "15",
+		availableSlots: "5",
 		bookingDeadline: "2025-07-15",
 		coverImage: "https://example.com/valley-classic.jpg",
 		trekDays: [
@@ -802,7 +802,7 @@ const packages = [
 		startingPoint: "Govindghat, Uttarakhand",
 		isSponsored: false,
 		price: "11000",
-		availableSlots: "12",
+		availableSlots: "5",
 		bookingDeadline: "2025-08-05",
 		coverImage: "https://example.com/valley-hemkund.jpg",
 		trekDays: [
@@ -855,7 +855,7 @@ const packages = [
 		startingPoint: "Govindghat, Uttarakhand",
 		isSponsored: false,
 		price: "9500",
-		availableSlots: "10",
+		availableSlots: "5",
 		bookingDeadline: "2025-06-20",
 		coverImage: "https://example.com/valley-monsoon.jpg",
 		trekDays: [
@@ -907,7 +907,7 @@ const packages = [
 		startingPoint: "Govindghat, Uttarakhand",
 		isSponsored: false,
 		price: "10500",
-		availableSlots: "8",
+		availableSlots: "5",
 		bookingDeadline: "2025-05-15",
 		coverImage: "https://example.com/valley-adventure.jpg",
 		trekDays: [
@@ -959,7 +959,7 @@ const packages = [
 		startingPoint: "Govindghat, Uttarakhand",
 		isSponsored: false,
 		price: "12000",
-		availableSlots: "6",
+		availableSlots: "5",
 		bookingDeadline: "2025-08-10",
 		coverImage: "https://example.com/valley-photography.jpg",
 		trekDays: [
@@ -1011,7 +1011,7 @@ const packages = [
 		startingPoint: "Aru Valley, Kashmir",
 		isSponsored: false,
 		price: "9500",
-		availableSlots: "14",
+		availableSlots: "5",
 		bookingDeadline: "2025-08-15",
 		coverImage: "https://example.com/tarsar-classic.jpg",
 		trekDays: [
@@ -1063,7 +1063,7 @@ const packages = [
 		startingPoint: "Aru Valley, Kashmir",
 		isSponsored: false,
 		price: "11000",
-		availableSlots: "10",
+		availableSlots: "5",
 		bookingDeadline: "2025-06-20",
 		coverImage: "https://example.com/tarsar-adventure.jpg",
 		trekDays: [
@@ -1115,7 +1115,7 @@ const packages = [
 		startingPoint: "Aru Valley, Kashmir",
 		isSponsored: false,
 		price: "9800",
-		availableSlots: "12",
+		availableSlots: "5",
 		bookingDeadline: "2025-07-10",
 		coverImage: "https://example.com/tarsar-monsoon.jpg",
 		trekDays: [
@@ -1167,7 +1167,7 @@ const packages = [
 		startingPoint: "Aru Valley, Kashmir",
 		isSponsored: false,
 		price: "10500",
-		availableSlots: "8",
+		availableSlots: "5",
 		bookingDeadline: "2025-08-25",
 		coverImage: "https://example.com/tarsar-photography.jpg",
 		trekDays: [
@@ -1216,7 +1216,7 @@ const packages = [
 		startingPoint: "Aru Valley, Kashmir",
 		isSponsored: false,
 		price: "8800",
-		availableSlots: "10",
+		availableSlots: "5",
 		bookingDeadline: "2025-05-20",
 		coverImage: "https://example.com/tarsar-family.jpg",
 		trekDays: [
@@ -1268,7 +1268,7 @@ const packages = [
 		startingPoint: "Uttarkashi, Uttarakhand",
 		isSponsored: true,
 		price: "12500",
-		availableSlots: "12",
+		availableSlots: "5",
 		bookingDeadline: "2025-09-10",
 		coverImage: "https://example.com/rupin-classic.jpg",
 		trekDays: [
@@ -1320,7 +1320,7 @@ const packages = [
 		startingPoint: "Uttarkashi, Uttarakhand",
 		isSponsored: false,
 		price: "13500",
-		availableSlots: "8",
+		availableSlots: "5",
 		bookingDeadline: "2025-07-15",
 		coverImage: "https://example.com/rupin-adventure.jpg",
 		trekDays: [
@@ -1372,7 +1372,7 @@ const packages = [
 		startingPoint: "Uttarkashi, Uttarakhand",
 		isSponsored: false,
 		price: "14500",
-		availableSlots: "10",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-01",
 		coverImage: "https://example.com/rupin-winter.jpg",
 		trekDays: [
@@ -1424,7 +1424,7 @@ const packages = [
 		startingPoint: "Uttarkashi, Uttarakhand",
 		isSponsored: false,
 		price: "12000",
-		availableSlots: "7",
+		availableSlots: "5",
 		bookingDeadline: "2025-08-15",
 		coverImage: "https://example.com/rupin-photography.jpg",
 		trekDays: [
@@ -1476,7 +1476,7 @@ const packages = [
 		startingPoint: "Uttarkashi, Uttarakhand",
 		isSponsored: false,
 		price: "10500",
-		availableSlots: "10",
+		availableSlots: "5",
 		bookingDeadline: "2025-07-25",
 		coverImage: "https://example.com/rupin-family.jpg",
 		trekDays: [
@@ -1528,7 +1528,7 @@ const packages = [
 		startingPoint: "Sankri, Uttarakhand",
 		isSponsored: false,
 		price: "9000",
-		availableSlots: "15",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-05",
 		coverImage: "https://example.com/kedarkantha-classic.jpg",
 		trekDays: [
@@ -1580,7 +1580,7 @@ const packages = [
 		startingPoint: "Sankri, Uttarakhand",
 		isSponsored: false,
 		price: "10500",
-		availableSlots: "10",
+		availableSlots: "5",
 		bookingDeadline: "2025-11-20",
 		coverImage: "https://example.com/kedarkantha-family.jpg",
 		trekDays: [
@@ -1632,7 +1632,7 @@ const packages = [
 		startingPoint: "Sankri, Uttarakhand",
 		isSponsored: false,
 		price: "11000",
-		availableSlots: "6",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-10",
 		coverImage: "https://example.com/kedarkantha-photography.jpg",
 		trekDays: [
@@ -1684,7 +1684,7 @@ const packages = [
 		startingPoint: "Sankri, Uttarakhand",
 		isSponsored: false,
 		price: "12000",
-		availableSlots: "8",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-01",
 		coverImage: "https://example.com/kedarkantha-snow.jpg",
 		trekDays: [
@@ -1788,7 +1788,7 @@ const packages = [
 		startingPoint: "Manebhanjan, West Bengal",
 		isSponsored: true,
 		price: "8500",
-		availableSlots: "20",
+		availableSlots: "5",
 		bookingDeadline: "2025-11-15",
 		coverImage: "https://example.com/sandakphu-singalila.jpg",
 		trekDays: [
@@ -1840,7 +1840,7 @@ const packages = [
 		startingPoint: "Manebhanjan, West Bengal",
 		isSponsored: false,
 		price: "7800",
-		availableSlots: "15",
+		availableSlots: "5",
 		bookingDeadline: "2025-11-05",
 		coverImage: "https://example.com/sandakphu-kanchenjunga.jpg",
 		trekDays: [
@@ -1892,7 +1892,7 @@ const packages = [
 		startingPoint: "Manebhanjan, West Bengal",
 		isSponsored: false,
 		price: "9500",
-		availableSlots: "10",
+		availableSlots: "5",
 		bookingDeadline: "2025-11-20",
 		coverImage: "https://example.com/sandakphu-adventure.jpg",
 		trekDays: [
@@ -1944,7 +1944,7 @@ const packages = [
 		startingPoint: "Manebhanjan, West Bengal",
 		isSponsored: false,
 		price: "7000",
-		availableSlots: "18",
+		availableSlots: "5",
 		bookingDeadline: "2025-10-25",
 		coverImage: "https://example.com/sandakphu-sunrise.jpg",
 		trekDays: [
@@ -1996,7 +1996,7 @@ const packages = [
 		startingPoint: "Manebhanjan, West Bengal",
 		isSponsored: false,
 		price: "10500",
-		availableSlots: "12",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-10",
 		coverImage: "https://example.com/sandakphu-winter.jpg",
 		trekDays: [
@@ -2048,7 +2048,7 @@ const packages = [
 		startingPoint: "Sankri, Uttarakhand",
 		isSponsored: false,
 		price: "12000",
-		availableSlots: "12",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-01",
 		coverImage: "https://example.com/bali-pass-adventure.jpg",
 		trekDays: [
@@ -2100,7 +2100,7 @@ const packages = [
 		startingPoint: "Sankri, Uttarakhand",
 		isSponsored: false,
 		price: "11000",
-		availableSlots: "10",
+		availableSlots: "5",
 		bookingDeadline: "2025-11-25",
 		coverImage: "https://example.com/bali-pass-high-altitude.jpg",
 		trekDays: [
@@ -2152,7 +2152,7 @@ const packages = [
 		startingPoint: "Sankri, Uttarakhand",
 		isSponsored: false,
 		price: "13000",
-		availableSlots: "8",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-10",
 		coverImage: "https://example.com/bali-pass-challenge.jpg",
 		trekDays: [
@@ -2204,7 +2204,7 @@ const packages = [
 		startingPoint: "Sankri, Uttarakhand",
 		isSponsored: false,
 		price: "14000",
-		availableSlots: "7",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-20",
 		coverImage: "https://example.com/bali-pass-winter.jpg",
 		trekDays: [
@@ -2256,7 +2256,7 @@ const packages = [
 		startingPoint: "Sankri, Uttarakhand",
 		isSponsored: true,
 		price: "12500",
-		availableSlots: "9",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-15",
 		coverImage: "https://example.com/bali-pass-himalayan.jpg",
 		trekDays: [
@@ -2308,7 +2308,7 @@ const packages = [
 		startingPoint: "Sankri, Uttarakhand",
 		isSponsored: false,
 		price: "9500",
-		availableSlots: "15",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-05",
 		coverImage: "https://example.com/kedarkantha-winter.jpg",
 		trekDays: [
@@ -2366,7 +2366,7 @@ const packages = [
 		startingPoint: "Sankri, Uttarakhand",
 		isSponsored: false,
 		price: "10500",
-		availableSlots: "10",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-10",
 		coverImage: "https://example.com/kedarkantha-summit.jpg",
 		trekDays: [
@@ -2424,7 +2424,7 @@ const packages = [
 		startingPoint: "Sankri, Uttarakhand",
 		isSponsored: false,
 		price: "9900",
-		availableSlots: "12",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-15",
 		coverImage: "https://example.com/kedarkantha-escape.jpg",
 		trekDays: [
@@ -2481,7 +2481,7 @@ const packages = [
 		startingPoint: "Sankri, Uttarakhand",
 		isSponsored: false,
 		price: "9000",
-		availableSlots: "20",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-10",
 		coverImage: "https://example.com/kedarkantha-classic.jpg",
 		trekDays: [
@@ -2539,7 +2539,7 @@ const packages = [
 		startingPoint: "Sankri, Uttarakhand",
 		isSponsored: false,
 		price: "10000",
-		availableSlots: "10",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-20",
 		coverImage: "https://example.com/kedarkantha-adventure.jpg",
 		trekDays: [
@@ -2596,7 +2596,7 @@ const packages = [
 		startingPoint: "Debra, Uttarakhand",
 		isSponsored: true,
 		price: "14500",
-		availableSlots: "12",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-25",
 		coverImage: "https://example.com/roopkund-mystery.jpg",
 		trekDays: [
@@ -2672,7 +2672,7 @@ const packages = [
 		startingPoint: "Debra, Uttarakhand",
 		isSponsored: false,
 		price: "16000",
-		availableSlots: "8",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-20",
 		coverImage: "https://example.com/roopkund-challenge.jpg",
 		trekDays: [
@@ -2748,7 +2748,7 @@ const packages = [
 		startingPoint: "Debra, Uttarakhand",
 		isSponsored: false,
 		price: "13500",
-		availableSlots: "10",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-18",
 		coverImage: "https://example.com/roopkund-legend.jpg",
 		trekDays: [
@@ -2818,7 +2818,7 @@ const packages = [
 		startingPoint: "Debra, Uttarakhand",
 		isSponsored: false,
 		price: "17000",
-		availableSlots: "6",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-30",
 		coverImage: "https://example.com/roopkund-adventure.jpg",
 		trekDays: [
@@ -2890,7 +2890,7 @@ const packages = [
 		startingPoint: "Yuksom, Sikkim",
 		isSponsored: false,
 		price: "18000",
-		availableSlots: "15",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-25",
 		coverImage: "https://example.com/goechala-view.jpg",
 		trekDays: [
@@ -2970,7 +2970,7 @@ const packages = [
 		startingPoint: "Yuksom, Sikkim",
 		isSponsored: false,
 		price: "22000",
-		availableSlots: "10",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-28",
 		coverImage: "https://example.com/goechala-kanchenjunga.jpg",
 		trekDays: [
@@ -3051,7 +3051,7 @@ const packages = [
 		startingPoint: "Yuksom, Sikkim",
 		isSponsored: true,
 		price: "21000",
-		availableSlots: "12",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-30",
 		coverImage: "https://example.com/goechala-himalayan.jpg",
 		trekDays: [
@@ -3135,7 +3135,7 @@ const packages = [
 		startingPoint: "Yuksom, Sikkim",
 		isSponsored: false,
 		price: "24000",
-		availableSlots: "8",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-22",
 		coverImage: "https://example.com/goechala-kanchenjunga-beyond.jpg",
 		trekDays: [
@@ -3214,7 +3214,7 @@ const packages = [
 		startingPoint: "Yuksom, Sikkim",
 		isSponsored: false,
 		price: "28000",
-		availableSlots: "6",
+		availableSlots: "5",
 		bookingDeadline: "2025-12-31",
 		coverImage: "https://example.com/goechala-adventure.jpg",
 		trekDays: [

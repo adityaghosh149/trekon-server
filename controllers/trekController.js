@@ -1,5 +1,6 @@
 import locations from "../data/locations.js";
 import packages from "../data/packages.js";
+import changeDateFormat from "../utils/date.js";
 
 const getLocationName = (locationId) => {
 	const location = locations.find((location) => location.id === locationId);
@@ -52,8 +53,8 @@ const transformPackageData = ({
 		groupSizeMin,
 		groupSizeMax,
 		difficulty,
-		startDate,
-		endDate,
+		startDate: changeDateFormat(changeDateFormat),
+		endDate: changeDateFormat(endDate),
 		price,
 		image: coverImage,
 		sherpa: getSherpa(sherpa),
