@@ -53,7 +53,7 @@ const transformPackageData = ({
 		groupSizeMin,
 		groupSizeMax,
 		difficulty,
-		startDate: changeDateFormat(changeDateFormat),
+		startDate: changeDateFormat(startDate),
 		endDate: changeDateFormat(endDate),
 		price,
 		image: coverImage,
