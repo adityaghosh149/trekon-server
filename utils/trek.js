@@ -1,5 +1,9 @@
+import dotenv from "dotenv";
+import path from "path";
 import locations from "../data/locations.js";
 import changeDateFormat from "./date.js";
+
+dotenv.config();
 
 const getLocationName = (locationId) => {
 	const location = locations.find((location) => location.id === locationId);
@@ -8,7 +12,9 @@ const getLocationName = (locationId) => {
 
 const getSherpa = (sherpa) => ({
 	name: sherpa.name,
-	avatar: sherpa.avatar,
+	avatar: `${process.env.ROOT}/data/sherpa-pfp/${
+		Math.floor(Math.random() * 12) + 1
+	}.jpg`,
 	experience: sherpa.experience,
 });
 
@@ -36,13 +42,15 @@ const transformPackageData = ({
 	groupSizeMax,
 	difficulty,
 	price,
-	coverImage,
 	bookingDeadline,
 	sherpa,
 	isSponsored,
 }) => {
 	const startDate = getStartDate(bookingDeadline);
 	const endDate = getEndDate(startDate, duration);
+
+	const randomImageNumber = Math.floor(Math.random() * 12) + 1;
+	const imagePath = `${process.env.ROOT}/data/package-images/${locationId}/${randomImageNumber}.jpg`;
 
 	return {
 		id: id.toString(),
@@ -55,7 +63,7 @@ const transformPackageData = ({
 		startDate: changeDateFormat(startDate),
 		endDate: changeDateFormat(endDate),
 		price,
-		image: coverImage,
+		image: imagePath,
 		sherpa: getSherpa(sherpa),
 		isSponsored,
 	};

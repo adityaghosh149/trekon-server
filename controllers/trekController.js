@@ -3,7 +3,10 @@ import { transformPackageData } from "../utils/trek.js";
 
 const getAllTreks = (req, res) => {
 	try {
-		const data = packages.map(transformPackageData);
+		const data = packages
+			.map(transformPackageData)
+			.sort((a, b) => b.isSponsored - a.isSponsored);
+
 		res.status(200).json(data);
 	} catch (error) {
 		console.error(error);

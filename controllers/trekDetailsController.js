@@ -1,5 +1,26 @@
+import dotenv from "dotenv";
+import { loadEnvFile } from "process";
 import packages from "../data/packages.js";
 import changeDateFormat from "../utils/date.js";
+
+dotenv.config();
+
+const getPhotoGallery = (locationId) => {
+	const numbers = new Set();
+	while (numbers.size < 6) {
+		const randomNumber = Math.floor(Math.random() * 12) + 1;
+		numbers.add(randomNumber);
+	}
+
+	const links = Array.from(numbers).map(
+		(number) =>
+			`${process.env.ROOT}/data/package-images/${locationId}/${number}.jpg`
+	);
+
+	console.log(links);
+
+	return links;
+};
 
 const getTrekDetails = (req, res) => {
 	try {
@@ -14,6 +35,7 @@ const getTrekDetails = (req, res) => {
 			id: trekId,
 			title,
 			duration,
+			locationId,
 			description,
 			groupSizeMin,
 			groupSizeMax,
@@ -22,10 +44,16 @@ const getTrekDetails = (req, res) => {
 			startingPoint,
 			price,
 			trekDays,
-			coverImage,
 			bookingDeadline,
 			sherpa,
 		} = trek;
+
+		sherpa.avatar = `${process.env.ROOT}/data/sherpa-pfp/${
+			Math.floor(Math.random() * 12) + 1
+		}.jpg`;
+
+		const photo_gallery = getPhotoGallery(locationId);
+		const coverImage = photo_gallery.pop();
 
 		const data = {
 			id: trekId.toString(),
@@ -41,6 +69,7 @@ const getTrekDetails = (req, res) => {
 			coverImage,
 			trekDays,
 			sherpa,
+			photo_gallery,
 		};
 
 		res.status(200).json(data);

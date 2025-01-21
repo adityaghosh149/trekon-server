@@ -33,16 +33,12 @@ const getTreks = (req, res) => {
 			.send("Invalid dateRange format. Use format: startDate_endDate");
 	}
 
-	console.log(startDate, endDate);
-
 	let data = [];
-	if (location == "") {
+	if (location === "") {
 		data = packages
 			.filter((item) => {
 				const trekStartDate = getStartDate(item.bookingDeadline);
 				const trekEndDate = getEndDate(trekStartDate, item.duration);
-
-				console.log(trekStartDate, trekEndDate);
 
 				return isTrekWithinQueryDateRange(
 					changeDateFormat(startDate),
@@ -59,7 +55,7 @@ const getTreks = (req, res) => {
 				const trekEndDate = getEndDate(trekStartDate, item.duration);
 
 				return (
-					item.locationId == location &&
+					item.locationId === parseInt(location) &&
 					isTrekWithinQueryDateRange(
 						changeDateFormat(startDate),
 						changeDateFormat(endDate),
@@ -68,7 +64,8 @@ const getTreks = (req, res) => {
 					)
 				);
 			})
-			.map(transformPackageData);
+			.map(transformPackageData)
+			.sort((a, b) => b.isSponsored - a.isSponsored);
 	}
 
 	res.status(200).json(data);
