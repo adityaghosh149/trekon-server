@@ -17,8 +17,6 @@ const getPhotoGallery = (locationId) => {
 			`${process.env.ROOT}/data/package-images/${locationId}/${number}.jpg`
 	);
 
-	console.log(links);
-
 	return links;
 };
 
