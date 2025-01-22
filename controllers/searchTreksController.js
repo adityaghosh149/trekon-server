@@ -1,3 +1,4 @@
+import { loadEnvFile } from "process";
 import packages from "../data/packages.js";
 import changeDateFormat from "../utils/date.js";
 import {
@@ -16,7 +17,7 @@ const isTrekWithinQueryDateRange = (
 };
 
 const getTreks = (req, res) => {
-	const { location, dateRange } = req.query;
+	let { location, dateRange } = req.query;
 
 	if (!dateRange) {
 		return res
@@ -32,6 +33,8 @@ const getTreks = (req, res) => {
 			.status(400)
 			.send("Invalid dateRange format. Use format: startDate_endDate");
 	}
+
+	location = location || "";
 
 	let data = [];
 	if (location === "") {
