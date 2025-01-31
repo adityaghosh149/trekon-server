@@ -18,9 +18,24 @@ dotenv.config();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const corsOptions = {
+	origin: (origin, callback) => {
+		const allowedOrigins = process.env.CORS_ORIGIN
+			? process.env.CORS_ORIGIN.split(",")
+			: [];
+		if (!origin || allowedOrigins.includes(origin)) {
+			callback(null, true); // Allow the request
+		} else {
+			callback(new Error("Not allowed by CORS")); // Block the request
+		}
+	},
+	methods: "GET,POST,PUT,DELETE",
+	allowedHeaders: "Content-Type, Authorization",
+};
+
 // Middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 app.use("/data", express.static(path.join(__dirname, "/data")));
 
 // Routes
@@ -37,7 +52,7 @@ try {
 	});
 
 	// Start the server
-	const port = process.env.PORT || 5500;
+	const port = process.env.PORT || 8080;
 	app.listen(port, () => console.log(`Server is running on port ${port}`));
 } catch (error) {
 	console.error("Error connecting to the database:", error);
