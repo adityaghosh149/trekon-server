@@ -20,10 +20,8 @@ const __dirname = path.dirname(__filename);
 
 const corsOptions = {
 	origin: (origin, callback) => {
-		const allowedOrigins = process.env.CORS_ORIGIN
-			? process.env.CORS_ORIGIN.split(",")
-			: [];
-		if (!origin || allowedOrigins.includes(origin)) {
+		const allowedOrigins = process.env.CORS_ORIGIN.split(",");
+		if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
 			callback(null, true); // Allow the request
 		} else {
 			callback(new Error("Not allowed by CORS")); // Block the request
